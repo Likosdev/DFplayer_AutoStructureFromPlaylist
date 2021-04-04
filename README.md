@@ -30,3 +30,24 @@ The script will create two folders (in the folder it is placed itself):
 "PlayListsM3U" which you put your playlists in to be converted (input for script)
 "SDcardFolders" which contains the script's output (numbered folders accoring to the playlist count and copied plus renamed MP3 files)
 The script iterates through all playlist files within PlayListsM3U and will create folders accordingly, copying the playlist's linked files into this folder, and renaming it according to the playlist's track number following DFplayer's file/folder format.
+
+# Virtual Environment
+This Repo supports development inside a virtual environment `venv`. With Virtual Environments dependencies are managed per project and not per user-installed Modules.
+
+`venv` needs to be installed globally.
+
+To create the virtual environment exectute `venv venv`. If you like a different name for your _venv_, please consider adding the directory name to .gitignore so you dont commit all dependencies to github.
+
+after creation, activate the virtual environment with execution of `.\venv\Scripts\activate.bat` from the project root. 
+
+After activating, requirements can be installed with `pip install -r requirements.txt`
+
+Any added requirement must be added to requirements.txt as well. To simply overwrite the file with all requirements execute `pip freeze | Out-File -Encoding UTF8 requirements.txt` on windows, on linux execute `pip freeze > requirements.txt`
+
+# Unit Testing
+not ready yet
+
+
+
+
+
